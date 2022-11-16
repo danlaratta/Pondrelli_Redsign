@@ -3,6 +3,7 @@ import styled from 'styled-components/macro'
 import { Parallax } from 'react-parallax'
 import BgImg from '../Assets/HeroBg.jpg'
 import { Link } from 'react-router-dom'
+import TopChoices from '../Components/TopChoices'
 
 const Container = styled.div`
     width: 100%;
@@ -40,21 +41,30 @@ const Links = styled(Link)`
     margin-top: 3rem;
 `
 
+const TopChoicesSection = styled.div`
+    width: 100%;
+`
+
 const Home = () => {
     return (
         <Container>
             <Parallax 
                 bgImage={BgImg}
                 bgImageAlt="the dog"
-                strength={-200}
+                strength={-300}
             >
                 <TextContainer>
                     <Title> Pondrelli's </Title>
                     <SubTitle> Pizza & Kitchen </SubTitle>
                     <Links to='/order'> Order </Links>
                 </TextContainer>
-
             </Parallax>
+
+            <TopChoicesSection>
+                <TopChoices />
+            </TopChoicesSection>
+
+            
         </Container>
     )
 }
