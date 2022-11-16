@@ -54,7 +54,7 @@ const Links = styled(Link)`
     text-decoration: none;
 
     &:hover {
-        
+        color: #ff0000;
     }
 `
 
