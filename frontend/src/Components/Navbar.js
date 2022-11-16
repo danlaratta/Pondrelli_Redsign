@@ -5,7 +5,10 @@ import { BsTelephone } from 'react-icons/bs'
 
 const Container = styled.div`
     width: 100%;
-    background-color: #1e1e1d;
+    background-color: transparent;
+    /* background-color: #1e1e1d; */
+    position: fixed;
+    z-index: 10;
 `
 
 const Wrapper = styled.div`
