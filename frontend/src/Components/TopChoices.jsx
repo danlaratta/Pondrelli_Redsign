@@ -19,7 +19,7 @@ const Section = styled.div`
 `
 
 const Title = styled.span`
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-weight: bold;
     align-self: center;
     padding-bottom: 5rem;
@@ -42,10 +42,11 @@ const PizzaItem = styled.span`
 const PizzaImg = styled.img`
     width: 100%;
     border-radius: 1rem;
+    box-shadow: 0.3rem 0.7rem 0.8rem #888888;
 `
 
 const PizzaText = styled.span`
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding-top: 1rem;
 `
 
@@ -85,7 +86,7 @@ const TopChoices = () => {
                     </PizzaItem>
                 </PizzaContainer>
 
-                <PizzaLink> Order Online </PizzaLink>
+                <PizzaLink> View Menu </PizzaLink>
             </Section>
         </Container>
     )

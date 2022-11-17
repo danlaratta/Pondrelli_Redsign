@@ -2,46 +2,17 @@ import React from 'react'
 import styled from 'styled-components/macro'
 import { Parallax } from 'react-parallax'
 import BgImg from '../Assets/HeroBg.jpg'
-import { Link } from 'react-router-dom'
+import BgImg2 from '../Assets/bg.jpg'
 import TopChoices from '../Components/TopChoices'
+import ParallaxText from '../Components/ParallaxText'
+import AboutSection from '../Components/AboutSection'
+import OrderProcess from '../Components/OrderProcess'
 
 const Container = styled.div`
     width: 100%;
 `
 
-const TextContainer = styled.div`
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-`
-
-const Title = styled.span`
-    color: #fff;
-    font-size: 12rem;
-    font-weight: bold;
-`
-
-const SubTitle = styled.span`
-    color: #fff;
-    font-size: 6rem;
-`
-const Links = styled(Link)`
-    color: #fff;
-    text-decoration: none;
-    background: transparent;
-    font-size: 2rem;
-    font-weight: 600;
-    border: 0.3rem solid #fff;
-    padding: 1.5rem 4.5rem;
-    border-radius: 0.5rem;
-    margin-top: 3rem;
-`
-
-const TopChoicesSection = styled.div`
+const Section = styled.div`
     width: 100%;
 `
 
@@ -50,21 +21,43 @@ const Home = () => {
         <Container>
             <Parallax 
                 bgImage={BgImg}
-                bgImageAlt="the dog"
-                strength={-300}
+                bgImageAlt="bg img"
+                strength={-200}
             >
-                <TextContainer>
-                    <Title> Pondrelli's </Title>
-                    <SubTitle> Pizza & Kitchen </SubTitle>
-                    <Links to='/order'> Order </Links>
-                </TextContainer>
+                <ParallaxText
+                    title = "Pondrelli's"
+                    subtitle = 'Pizza & Kitchen'
+                    path = '/order'
+                    link = 'Order Now'
+                />
             </Parallax>
 
-            <TopChoicesSection>
+            <Section>
                 <TopChoices />
-            </TopChoicesSection>
+            </Section>
 
-            
+            <Parallax 
+                bgImage={BgImg2}
+                bgImageAlt="bg img"
+                strength={-250}
+            >
+                <ParallaxText
+                    title = "We Deliver"
+                    subtitle = 'Order now and try one of our pies today!'
+                    path = '/order'
+                    link = 'Order Now'
+                />
+            </Parallax>
+
+            <Section>
+                <OrderProcess />
+            </Section>
+
+            <Section>
+                <AboutSection />
+            </Section>
+
+
         </Container>
     )
 }
