@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import Chef from '../Assets/chef.jpg'
+import { Parallax } from 'react-parallax'
 
 const Container = styled.div`
     width: 100%;
@@ -11,6 +12,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
     display: flex;
     width: 78%;
+    padding: 5rem 0rem;
 `
 
 const Section = styled.div`
@@ -24,9 +26,7 @@ const PizzaImg = styled.img`
     max-width: 100%;
 `
 
-const TextContainer = styled.div`
-    
-`
+const TextContainer = styled.div``
 
 const Title = styled.span`
     font-size: 3.5rem;
@@ -55,7 +55,9 @@ const AboutSection = () => {
                 </Section>
 
                 <Section>
-                    <PizzaImg src={Chef} />
+                    <Parallax bgImageAlt="bg img" strength={-200}> 
+                        <PizzaImg src={Chef} />
+                    </Parallax>
                 </Section>
             </Wrapper>
         </Container>

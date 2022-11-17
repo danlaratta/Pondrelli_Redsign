@@ -45,7 +45,7 @@ const TextContainer = styled.div`
 const Icon = styled.div`
     width: 100%;
     font-size: 12rem;
-    color: #b10b0b;
+    color: var(--red);
     text-align: center;
 `
 

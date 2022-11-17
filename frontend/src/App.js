@@ -5,6 +5,7 @@ import Menu from './Pages/Menu'
 import Order from './Pages/Order'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
+import Footer from './Components/Footer'
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
         </Routes>
 
-        {/* <Footer /> */}
+        <Footer />
         
       </Router>
     </div>
