@@ -36,6 +36,10 @@ const Links = styled(Link)`
     padding: 1.5rem 4rem;
     border-radius: 0.5rem;
     margin-top: 3rem;
+
+    &:hover {
+        background-color: var(--red);
+    }
 `
 
 const ParallaxText = ({title, subtitle, path, link}) => {

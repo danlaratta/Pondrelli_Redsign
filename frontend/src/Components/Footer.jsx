@@ -39,6 +39,7 @@ const ContactSection = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 4rem;
 `
 
 const ContactItem = styled.div`

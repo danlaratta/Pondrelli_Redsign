@@ -61,6 +61,11 @@ const PizzaLink = styled(Link)`
     padding: 1.5rem 4.5rem;
     border-radius: 0.5rem;
     margin-top: 5rem;
+
+    &:hover {
+        background-color: var(--red);
+        color: #fff;
+    }
 `
 
 const TopChoices = () => {
