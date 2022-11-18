@@ -6,7 +6,7 @@ import { BsTelephone } from 'react-icons/bs'
 const Container = styled.div`
     width: 100%;
     background-color: ${props => props.color ? "var(--red)" : "rbga(0, 0, 0, 0)"};
-    box-shadow: ${props => props.color ? "0rem 0.3rem 0.8rem rgba(0, 0, 0, 0.5)" : "none"};;
+    box-shadow: ${props => props.color ? "0rem 0.3rem 0.8rem rgba(0, 0, 0, 0.7)" : "none"};;
     position: fixed;
     z-index: 10;
 `
