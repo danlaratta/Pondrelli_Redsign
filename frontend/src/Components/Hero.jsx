@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components/macro'
 import { BsArrowDownCircle, BsArrowDownCircleFill } from 'react-icons/bs'
 import { Parallax } from 'react-parallax'
+// import { motion } from 'framer-motion'
 
 
 const Container = styled.div`
@@ -40,7 +41,7 @@ const Hero = ({title, image}) => {
     const [isHovered, setIsHovered] = useState(false)
 
     const handleIconClick = () => {
-        window.scrollTo(0, 1000)
+        window.scrollTo({top: 935, behavior: 'smooth'})
     }
 
 

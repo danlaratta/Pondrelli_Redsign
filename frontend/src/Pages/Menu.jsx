@@ -17,7 +17,8 @@ const HeroSection = styled.div`
 `
 
 const MenuContainer = styled.div`
-    
+    background-color: gray;
+    height: 100vh;
 `
 
 const MenuSections = styled.div`
@@ -37,7 +38,7 @@ const Menu = () => {
         <Container>
             <Wrapper>
                 <HeroSection>
-                    <Hero title= 'Menu' image= {BgImg} />
+                    <Hero title= 'Menu' image={BgImg} />
                 </HeroSection>
 
                 <MenuContainer>
