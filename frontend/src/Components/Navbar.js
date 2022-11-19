@@ -5,8 +5,8 @@ import { BsTelephone } from 'react-icons/bs'
 
 const Container = styled.div`
     width: 100%;
-    background-color: ${props => props.color ? "var(--red)" : "rbga(0, 0, 0, 0)"};
-    box-shadow: ${props => props.color ? "0rem 0.3rem 0.8rem rgba(0, 0, 0, 0.7)" : "none"};;
+    background-color: ${props => props.color === 1 ? "var(--red)" : "rbga(0, 0, 0, 0)"};
+    box-shadow: ${props => props.color === 1 ? "0rem 0.3rem 0.8rem rgba(0, 0, 0, 0.7)" : "none"};;
     position: fixed;
     z-index: 10;
 `
@@ -75,7 +75,6 @@ const TextContainer = styled.div`
     justify-content: flex-end;
     gap: 0.5rem;
     width: 100%;
-    /* color: ${props => props.color ? "#000" : "#fff"}; */
     color: #fff;
 `
 
@@ -92,10 +91,10 @@ const Phone = styled.span`
 
 const Navbar = () => {
 
-    const [color, setColor] = useState(false)
+    const [color, setColor] = useState(0)
 
     const changeColor = () => {
-        window.scrollY >= 100 ? setColor(true) : setColor(false)
+        window.scrollY >= 100 ? setColor(1) : setColor(0)
     }
 
     window.addEventListener('scroll', changeColor)

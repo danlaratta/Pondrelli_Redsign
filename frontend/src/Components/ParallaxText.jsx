@@ -18,19 +18,19 @@ const TextContainer = styled.div`
 
 const Title = styled.span`
     color: #fff;
-    font-size: 8rem;
+    font-size: 10rem;
     font-weight: bold;
 `
 
 const SubTitle = styled.span`
     color: #fff;
-    font-size: 3.5rem;
+    font-size: 4rem;
 `
 const Links = styled(Link)`
     color: #fff;
     text-decoration: none;
     background: transparent;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
     border: 0.3rem solid #fff;
     padding: 1.5rem 4rem;

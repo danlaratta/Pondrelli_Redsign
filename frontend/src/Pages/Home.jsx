@@ -25,7 +25,7 @@ const Home = () => {
                 strength={-200}
             >
                 <ParallaxText
-                    title = "Pondrelli's"
+                    title = "Presley's"
                     subtitle = 'Pizza & Kitchen'
                     path = '/order'
                     link = 'Order Now'

@@ -113,8 +113,7 @@ const Footer = () => {
                         </ContactSection>
 
                         <ContactSection>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.4879711167964!2d-74.16002234869278!3d39.9528414915432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c19c2540915535%3A0x44ad797ce96da727!2sPondrelli&#39;s%20Pizza%20And%20Kitchen!5e0!3m2!1sen!2sus!4v1668720295072!5m2!1sen!2sus" title="map" loading="lazy"
-                            style={{ width: "100%", height: "25rem" }}></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.4879711167964!2d-74.16002234869278!3d39.9528414915432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c19c2540915535%3A0x44ad797ce96da727!2sPondrelli&#39;s%20Pizza%20And%20Kitchen!5e0!3m2!1sen!2sus!4v1668878360765!5m2!1sen!2sus" title= 'map' style={{ width: "100%", height: "25rem" }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                         </ContactSection>
                     </ContactContainer>
                 </Section>
