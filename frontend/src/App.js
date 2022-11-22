@@ -3,7 +3,6 @@ import Navbar from './Components/Navbar'
 import Home from './Pages/Home'
 import Menu from './Pages/Menu'
 import Order from './Pages/Order'
-import About from './Pages/About'
 import Contact from './Pages/Contact'
 import Footer from './Components/Footer'
 
@@ -17,7 +16,6 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/menu' element={<Menu />} />
           <Route path='/order' element={<Order />} />
-          <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
 

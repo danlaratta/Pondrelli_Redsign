@@ -114,7 +114,6 @@ const Navbar = () => {
                             <Links to='/' color={color}> Home </Links>
                             <Links to='/menu' color={color}> Menu </Links>
                             <Links to='/order' color={color}> Order Online </Links>
-                            <Links to='/about' color={color}> About </Links>
                             <Links to='/contact' color={color}> Contact </Links>
                         </NavContainer>
 

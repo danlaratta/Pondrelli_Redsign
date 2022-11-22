@@ -8,7 +8,7 @@ const Container = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #f4f4f4;
+    background-color: var(--bg);
 `
 
 const Wrapper = styled.div`
